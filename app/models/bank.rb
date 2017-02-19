@@ -1,3 +1,3 @@
 class Bank < ActiveRecord::Base
-	serialize :address, JSON
+	serialize :address, Array
 end
