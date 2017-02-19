@@ -2,7 +2,7 @@ class CreateBanks < ActiveRecord::Migration[5.0]
   def change
     create_table :banks do |t|
       t.string :name
-      t.text :address
+      t.text :address, array: true, default: []
       t.string :phone
       t.text :url
       t.text :workingHours
