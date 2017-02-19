@@ -1,2 +1,3 @@
-class Bank < ApplicationRecord
+class Bank < ActiveRecord::Base
+	serialize :address, Array
 end
